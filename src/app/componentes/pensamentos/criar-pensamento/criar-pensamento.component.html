@@ -8,13 +8,16 @@
     class="input"
     id="pensamento"
     name="pensamento"
-    placeholder="Escreva seu pensamento aqui">
+    placeholder="Escreva seu pensamento aqui"
+    [(ngModel)]="pensamento.conteudo">
+
 
     <label for="autoria">Autoria ou fonte</label>
     <input
     type="text"
     class="input"
     id="autoria"
+    [(ngModel)]="pensamento.autoria"
     name="autoria"
     placeholder="digite a autoria aqui">
 
@@ -35,8 +38,8 @@
         Prévia:
         <div class="modelo modelo1 ff-roboto-mono">
           <img src="../../../../assets/Imagensdocurso/modelo1.png" alt="aspas azuis">
-          <p class="conteudo">Aqui vai o conteúdo</p>
-          <p class="autoria"><b>Aqui vai o autoria</b></p>
+          <p class="conteudo">{{ pensamento.conteudo }}</p>
+          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
         </div>
       </div>
 
@@ -55,8 +58,8 @@
         Prévia:
         <div class="modelo modelo2 ff-roboto-mono">
           <img src="../../../../assets/Imagensdocurso/modelo2.png" alt="aspas azuis claro ">
-          <p class="conteudo">Aqui vai o conteúdo</p>
-          <p class="autoria"><b>Aqui vai o autoria</b></p>
+          <p class="conteudo">{{ pensamento.conteudo }}</p>
+          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
         </div>
       </div>
 
@@ -75,14 +78,14 @@
         Prévia:
         <div class="modelo modelo3 ff-roboto-mono">
           <img src="../../../../assets/Imagensdocurso/modelo3.png" alt="aspas verde">
-          <p class="conteudo">Aqui vai o conteúdo</p>
-          <p class="autoria"><b>Aqui vai o autoria</b></p>
+          <p class="conteudo">{{ pensamento.conteudo }}</p>
+          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
         </div>
       </div>
     </div>
     <div class="acoes">
-      <button class="botao">Salvar</button>
-      <button class="botao">Cancelar</button>
+      <button (click)="criarPensamento()" class="botao">Salvar</button>
+      <button (click)="cancelarPensamento()" class="botao">Cancelar</button>
     </div>
 
   </form>
