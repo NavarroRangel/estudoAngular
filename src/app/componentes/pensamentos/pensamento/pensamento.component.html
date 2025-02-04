@@ -6,7 +6,7 @@
     <button class="botao-editar" (click)="editarPensamento()">
       <img src="../../../../assets/Imagensdocurso/icone-editar.png" alt="editar">
     </button>
-    <button class="botao-excluir" (click)="excluirPensamento()">
+    <button class="botao-excluir" routerLink="/pensamentos/excluirPensamento/{{pensamento.id}}">
       <img src="../../../../assets/Imagensdocurso/icone-excluir.png" alt="excluir">
     </button>
 </div>
