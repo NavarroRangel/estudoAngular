@@ -1,0 +1,22 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "A vida é bela",
+      "autor": "Desconhecido",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "jaoziasdjnasdknasd ",
+      "autor": "Desconhecido",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "dasdsad as nasidjasdmaslda",
+      "autor": "Desconhecido",
+      "modelo": "modelo3"
+    }
+  ]
+}
