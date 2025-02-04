@@ -6,6 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listar-pensamento.component.css']
 })
 export class ListarPensamentoComponent implements OnInit {
+  listaPensamentos = [
+    // {
+    //   conteudo: 'Passo informações entre componentes',
+    //   autoria: 'Componente pai',
+    //   modelo: 'modelo1'
+    // },
+    // {
+    //   conteudo: 'Minha proproiedade é decorada com @input',
+    //   autoria: 'navarro',
+    //   modelo: 'modelo1'
+    // }
+
+  ]
 
   constructor() { }
 
