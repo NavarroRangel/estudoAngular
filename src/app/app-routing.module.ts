@@ -24,7 +24,7 @@ const routes: Routes = [
     component: ExcluirPensamentosComponent
   },
   {
-    path: 'pensamentos/editarrPensamento/:id',
+    path: 'pensamentos/editarPensamento/:id',
     component: EditarPensamentoComponent
   },
 ];
